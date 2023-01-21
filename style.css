@@ -8,7 +8,7 @@
     display: grid;
     width:90%;
     grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns:repeat(4,1fr);
     padding:30px;
     grid-gap:1rem;
     
@@ -19,6 +19,9 @@
    margin:2px;
 }
 #Container1{
+    font-weight:900;
+    font-size: 20px;
+    font-family:'inter';
     grid-column-start: 1;
     grid-column-end: -1;
     padding:10px;
@@ -69,17 +72,16 @@
     grid-column-end:-1;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpeIRtQI8WSigHrrCc9m7_z9oYKknAiTiD1Q&usqp=CAU);
     background-size: cover;
-    /* z index */
     position: relative;  
-    z-index: -60;
+    z-index: -65;
 
 }
-#footer{
+#footerSection{
     padding:5px;
     text-align: right;
     grid-column-start: 1;
     grid-column-end: -1;
     position: relative;
-    top:-125%;
-    z-index:-30;
+    top:-135%;
+    z-index:-50;
 }
